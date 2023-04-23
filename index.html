@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./src/stylesheets/style.css">
+    <title>L-Systems</title>
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v1.1.0/modern-normalize.min.css" rel="stylesheet">
+  </head>
+  <body class='min-h-screen max-h-screen w-full'>
+
+    <div class="flex flex-row justify-center items-center border-b border-black w-full" style="height:calc(var(--vh) * 7.5)">
+
+      <div class="flex w-full max-w-7xl flex-row justify-center mx-auto" style="height:calc(var(--vh) * 7.5)">
+        <button id="playPauseButton" class="flex justify-center items-center mx-2 active:scale-95"><img id="playPauseButtonSource" class="w-3/4 h-3/4" src="./play.svg"></button>
+        <button id="resetButton" class="flex justify-center items-center mx-2 active:scale-95"><img class="w-3/4 h-3/4" src="./undo.svg"></button>
+      </div>
+
+    </div>
+
+    <div class="fixed" id="gameContainer">
+      <div id="gameDiv">
+        <canvas id="gameCanvas"></canvas>
+      </div>
+    </div>
+
+  </body>
+  <script type='module' src="./src/javascripts/main.ts"></script>
+</html>
